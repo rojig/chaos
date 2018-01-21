@@ -45,53 +45,14 @@ int main() {
 	{
 
 		//Start all the calulations//
-		for (double t = 0; t <= T; t += delT) {
-			while (e >= tol) {
-
-				dx = x + delT*((y + yi) / 2);
-				dy = xi + delT*(a*((x + xi) / 2) -
-					b*pow(((x + xi) / 2), 3) - g*((y + yi) / 2) + v*cos(t + delT / 2));
-				e = pow((dx - xi), 2) + ((dy - yi), 2);
-
-				xi = dx; yi = dy;
-
-			}
-			x = xi; y = yi;
-
-			for (int row = 0; row < 100; row++) {
-				storage[row][0] = t;
-				storage[row][1] = xi;
-				storage[row][2] = yi;
-			}
-
-			if PeriodFound1 = false{
-
-				for (int row = 1; row < 100; row++) {
-					for (int prevRow = 0; prevRow < row; prevRow++) {
-						if (storage[row][1] == storage[prevRow][1]
-							&& storage[row][2] == storage[prevRow][2]) {
-
-							T = 2 * (storage[row][0] - storage[prevRow][0])
-
-								//found the period for the first time//
-								PeriodFound1 = true;
-						}
-					}
-				}
-			}
+	   //Hidden, if needed, please contact//
 
 			if PeriodFound1 = true{
 
 				//if period found print the values on the output file//
 				outfile << t << setw(10) << xi << setw(10) << yi << endl;
 
-				for (int row = 1; row < 100; row++) {
-					for (int prevRow = 0; prevRow < row; prevRow++) {
-						if (storage[row][1] == storage[prevRow][1]
-							&& storage[row][2] == storage[prevRow][2]) {
-
-							//found the period for the second time//
-							PeriodFound2 = true;
+				  //Hidden, if needed, please contact//
 
 						}
 					}
